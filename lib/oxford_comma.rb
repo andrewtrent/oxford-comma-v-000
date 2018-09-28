@@ -10,7 +10,7 @@ def oxford_comma(array)
     new_arr = array
     new_arr[-1].delete
     str = new_arr.join(", ")
-    second_arr = [str, array.pop]
+    second_arr = [str, array[-1]]
     second_str = second_arr.join(", and ")
     return second_str + "."
   end
