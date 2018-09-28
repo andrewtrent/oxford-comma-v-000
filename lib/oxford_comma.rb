@@ -8,9 +8,9 @@ def oxford_comma(array)
 
   else
     new_arr = array
-    new_arr.pop
+    new_arr[-1].delete
     str = new_arr.join(", ")
-    second_arr = [str,array.pop]
+    second_arr = [str, array.pop]
     second_str = second_arr.join(", and ")
     return second_str + "."
   end
